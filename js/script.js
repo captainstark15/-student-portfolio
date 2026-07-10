@@ -65,3 +65,36 @@ document.body.classList.toggle("dark-mode");
 });
 
 }
+// Dynamic Greeting Based on Time
+
+const greeting = document.getElementById("greeting");
+
+if (greeting) {
+
+    let visitor = localStorage.getItem("visitorName");
+
+    if (!visitor) {
+        visitor = prompt("Welcome! Can I Know Your Name?");
+        if (visitor && visitor.trim() !== "") {
+            localStorage.setItem("visitorName", visitor);
+        } else {
+            visitor = "Guest";
+        }
+    }
+
+    const hour = new Date().getHours();
+
+    let message = "";
+
+    if (hour >= 5 && hour < 12) {
+        message = "☀️ Good Morning";
+    } else if (hour >= 12 && hour < 17) {
+        message = "🌤️ Good Afternoon";
+    } else if (hour >= 17 && hour < 21) {
+        message = "🌇 Good Evening";
+    } else {
+        message = "🌙 Good Night";
+    }
+
+    greeting.innerHTML = `${message}, ${visitor}!<br>I'm Abdulbasit Abdulkadir Alakoso`;
+}

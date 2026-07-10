@@ -936,3 +936,10 @@ section h2{
 }
 
 }
+
+#greeting{
+    color:#2563EB;
+    font-size:3rem;
+    margin-bottom:20px;
+    animation:fadeIn 1s ease-in-out;
+}
