@@ -65,6 +65,11 @@ document.body.classList.toggle("dark-mode");
 });
 
 }
+    // Dynamic Greeting Based on Time
+
+const greeting = document.getElementById("greeting");
+
+if (greeting) {
     const hour = new Date().getHours();
 
     let message = "";
@@ -79,5 +84,5 @@ document.body.classList.toggle("dark-mode");
         message = "🌙 Good Night";
     }
 
-    greeting.innerHTML = `${message}, ${visitor}!<br>I'm Abdulbasit Abdulkadir Alakoso`;
+    greeting.innerHTML = `${message}, I'm Abdulbasit Abdulkadir Alakoso`;
 }
