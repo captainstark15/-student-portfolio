@@ -65,23 +65,6 @@ document.body.classList.toggle("dark-mode");
 });
 
 }
-// Dynamic Greeting Based on Time
-
-const greeting = document.getElementById("greeting");
-
-if (greeting) {
-
-    let visitor = localStorage.getItem("visitorName");
-
-    if (!visitor) {
-        visitor = prompt("Welcome! Can I Know Your Name?");
-        if (visitor && visitor.trim() !== "") {
-            localStorage.setItem("visitorName", visitor);
-        } else {
-            visitor = "Guest";
-        }
-    }
-
     const hour = new Date().getHours();
 
     let message = "";

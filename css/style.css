@@ -32,13 +32,13 @@ nav{
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 15px;
     font-weight:bold;
 }
 
 nav a:hover{
     color:#06B6D4;
 }
+
 
 /* Hero */
 
