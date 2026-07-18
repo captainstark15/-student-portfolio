@@ -87,7 +87,7 @@ box-shadow:0 8px 15px rgba(0,0,0,.2);
     gap:20px;
     margin-top:30px;
 }
-.dark-mode .card-text{
+.dark-mode .stat-card{
     color:#000000 !important;
 }
 .card{
