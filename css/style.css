@@ -81,7 +81,7 @@ box-shadow:0 8px 15px rgba(0,0,0,.2);
     text-align:center;
 }
 .dark-mode .hero h1{
-    color:#ffffff !important;
+    color:#000000 !important;
 }
 .cards{
     display:flex;
